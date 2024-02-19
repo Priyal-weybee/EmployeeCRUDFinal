@@ -238,6 +238,7 @@ namespace EmployeeCRUDFinal
         //}
         protected void EditButton_Click(object sender, GridViewEditEventArgs e)
         {
+            
             Insert.Enabled = false;
             using (SqlConnection con = new SqlConnection(cs.ToString()))
             {
@@ -323,8 +324,7 @@ namespace EmployeeCRUDFinal
         //    //bool isActive = isActive.Checked ? true : false;
         //    string CountryName = CountryDropDownList1.SelectedItem.Text;
         //    string StateName = StateDropDownList1.SelectedItem.Text;
-        //    int countryId = GetCountryIdByName(CountryName);
-        //    int stateId = GetStateIdByName(StateName);
+        //    int countryId = GetCountryIdByName(CountryName);r
 
 
         //    con.Open();
@@ -338,6 +338,8 @@ namespace EmployeeCRUDFinal
         //}
         protected void RowUpdateButton_CLick(object sender, GridViewUpdateEventArgs e)
         {
+          
+            
             Insert.Enabled = false;
 
             int employeeId = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
